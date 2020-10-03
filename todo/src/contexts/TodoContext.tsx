@@ -21,7 +21,7 @@ const TodoProvider = (props: any) => {
     console.log('Removeu', todo.title);
   };
   const toggle = (todo: Todo) => {
-    console.log('Alterou', todo);
+    console.log('Alterou', todo.title);
   };
   return (
     <TodoContext.Provider
