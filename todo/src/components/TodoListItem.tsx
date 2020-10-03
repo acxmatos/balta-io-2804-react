@@ -10,6 +10,10 @@ const TodoListItem = (props: TodoListItemProps) => {
     console.log('Mudou');
   };
 
+  const onRemove = (todo: Todo) => {
+    console.log(todo);
+  };
+
   return (
     <tr className="uk-animation-slide-bottom-medium">
       <td className="uk-width-auto">
@@ -27,6 +31,7 @@ const TodoListItem = (props: TodoListItemProps) => {
         <button
           className="uk-icon-button uk-button-danger"
           uk-icon="trash"
+          onClick={() => onRemove(props.todo)}
         ></button>
       </td>
     </tr>
